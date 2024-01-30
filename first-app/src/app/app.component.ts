@@ -1,5 +1,4 @@
 import { Component, NgModule } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
@@ -16,10 +15,9 @@ import { HomeComponent } from './home/home.component';
     </section>
   </main>
 `,
-  imports: [RouterOutlet, 
+  imports: [ 
     HomeComponent]
   ,
-  templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
