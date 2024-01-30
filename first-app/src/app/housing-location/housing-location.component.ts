@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HousingLocation } from '../housinglocation';
 
 @Component({
   selector: 'app-housing-location',
@@ -11,6 +13,8 @@ import { Component } from '@angular/core';
   `,
   styleUrl: './housing-location.component.css'
 })
-export class HousingLocationComponent {
 
+//it means it does not have default value
+export class HousingLocationComponent {
+  @Input() housingLocation!: HousingLocation;
 }
