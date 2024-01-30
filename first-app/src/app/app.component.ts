@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
   template: `
   <main>
     <header class="brand-name">
-      <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
+      
     </header>
     <section class="content">
       <app-home></app-home>
@@ -22,6 +22,7 @@ import { HomeComponent } from './home/home.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'first-app';
 }
